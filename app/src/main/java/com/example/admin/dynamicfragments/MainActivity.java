@@ -14,14 +14,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         FragmentManager fragment = getSupportFragmentManager();
-        fragment.beginTransaction().add(
-                R.id.a_frame1, new BlankFragment()
-        ).commit();
-        fragment.beginTransaction().add(
-                R.id.a_frame2, new BlankFragment()
-        ).commit();
-        fragment.beginTransaction().add(
-                R.id.a_frame3, new BlankFragment()
-        ).commit();
+        fragment.beginTransaction()
+                .add(R.id.a_frame1, new BlankFragment())
+                .add(R.id.a_frame2, new BlankFragment())
+                .add(R.id.a_frame3, new BlankFragment())
+                .commit();
     }
 }
